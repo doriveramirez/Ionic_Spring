@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Galletas de la fortuna
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button color="primary" (click)="goToCookie()">Consigue la galleta de hoy</ion-button>
+  <p>{{cookie}}</p>
+  <ion-item>
+    <ion-label>Cookie: </ion-label>
+    <ion-input [(ngModel)]="cookie"></ion-input>
+  </ion-item>
+  <ion-button color="primary" (click)="goToList()">Visita la lista de galletas que te han tocado</ion-button>
+  <ion-list>
+    <ion-item *ngFor="let f of list">
+      <p (click)="copyCookie(f)" onmouseover="" style="cursor: pointer;">{{f.phrase}}</p>
+    </ion-item>
+  </ion-list>
+  <ion-item>
+    <ion-label>Introduce ID: </ion-label>
+    <ion-input [(ngModel)]="cookieId"></ion-input>
+    <ion-button color="primary" (click)="goToSearch()">Buscar galleta</ion-button>
+  </ion-item>
+  <p>{{search}}</p>
+  <p>Crear galleta</p>
+  <ion-item>
+    <ion-label>Introduce Frase: </ion-label>
+    <ion-input [(ngModel)]="cookiePhrase"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Introduce las veces que ha salido (0 por defecto): </ion-label>
+    <ion-input [(ngModel)]="cookieTimes"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button color="primary" (click)="goToPost()">Crear</ion-button>
+    <ion-button color="primary" (click)="goToPut()">Modificar</ion-button>
+    <ion-button color="primary" (click)="goToDelete()">Borrar</ion-button>
+    <ion-button color="primary" (click)="goToClone()">Clonar</ion-button>
+  </ion-item>
+</ion-content>

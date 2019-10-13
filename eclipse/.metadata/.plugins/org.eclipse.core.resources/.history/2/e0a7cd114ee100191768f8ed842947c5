@@ -1,0 +1,5 @@
+package com.doriveramirez.cookiesapi.entity.models;
+
+public class Cookie {
+
+}

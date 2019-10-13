@@ -1,0 +1,17 @@
+use db_cookies;
+truncate table cookie;
+insert into cookie values (null,"Vale más un diamante con defecto que un pedrusco sin ninguno",0);
+insert into cookie values (null,"Es una locura amar, a menos que se ame con locura",0);
+insert into cookie values (null,"Habrá un romance feliz para ti dentro de muy poco",0);
+insert into cookie values (null,"Atraigo el éxito y la prosperidad con todas mis ideas",0);
+insert into cookie values (null,"Estás en el lugar perfecto para llegar desde aquí",0);
+insert into cookie values (null,"Estar en la ruina es una situación temporal. Ser pobre es un estado mental",0);
+insert into cookie values (null,"Tengo la mayor de todas riquezas: la de no desearla",0);
+insert into cookie values (null,"Me estoy volviendo mejor en lo que hago todos los días",0);
+insert into cookie values (null,"A cada paso, una oportunidad aparece frente a mí",0);
+insert into cookie values (null,"No te metas en el mundo de las drogas",0);
+insert into cookie values (null,"La salud no es sólo la ausencia de enfermedad, sino también la armonía con uno mismo y el entorno",0);
+insert into cookie values (null,"Tienes que dormir más",0);
+insert into cookie values (null,"La salud es la verdadera riqueza, y no las monedas de oro y plata",0);
+insert into cookie values (null,"Vale más un diamante con defecto que un pedrusco sin ninguno",0);
+SELECT * FROM db_cookies.cookie;

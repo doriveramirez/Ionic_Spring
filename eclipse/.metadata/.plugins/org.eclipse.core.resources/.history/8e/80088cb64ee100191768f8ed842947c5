@@ -1,0 +1,9 @@
+package com.doriveramirez.cookiesapi.entity.models;
+
+import java.io.Serializable;
+
+public class Cookie implements Serializable {
+	private int id;
+	private String phrase;
+	private float times;
+}
